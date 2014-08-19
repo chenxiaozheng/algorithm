@@ -13,29 +13,6 @@
 
 TREE_INIT_HEAD(head, 40);
 
-
-int main(int argc, char *argv[])
-{
-    printf("head.num = %d\n", head.num);
-    
-    insert_tree_node(create_tree_node(10));
-    insert_tree_node(create_tree_node(18));
-    insert_tree_node(create_tree_node(12));
-    insert_tree_node(create_tree_node(1));
-    insert_tree_node(create_tree_node(9));
-    insert_tree_node(create_tree_node(3));
-    insert_tree_node(create_tree_node(50));
-    insert_tree_node(create_tree_node(70));
-    insert_tree_node(create_tree_node(100));
-    insert_tree_node(create_tree_node(10000));
-
-    print_tree_num(&head);
-
-
-    return 0;
-}
-
-
 struct tree_node *create_tree_node(int num)
 {
     struct tree_node *dest = (struct tree_node *)malloc(sizeof(struct tree_node));
