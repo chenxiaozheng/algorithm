@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 
     print_tree_num(&head);
 
+    tree_transfer_list(&head);
 
     return 0;
 
